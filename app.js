@@ -141,3 +141,51 @@ now.setFullYear(now.getFullYear() - 100);
 
 console.log("Date 100 years back:", now);
 alert("Date 100 years back: " + now);
+
+// Answer13
+
+var age = +prompt("Enter your age:");
+
+var now = new Date();
+var currentYear = now.getFullYear();
+
+var birthYear = currentYear - age;
+
+console.log("Your birth year is: " + birthYear);
+alert("Your birth year is: " + birthYear);
+
+// Answer14
+
+// Customer details
+var customerName = prompt("Enter Customer Name:");
+var units = +prompt("Enter Number of Units:");
+var chargesPerUnit = +prompt("Enter Charges per Unit:");
+
+// Current month
+var months = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+];
+var now = new Date();
+var currentMonth = months[now.getMonth()];
+
+var netAmount = units * chargesPerUnit;
+var lateSurcharge = 350;
+var grossAmount = netAmount + lateSurcharge;
+
+netAmount = netAmount.toFixed(2);
+grossAmount = grossAmount.toFixed(2);
+chargesPerUnit = chargesPerUnit.toFixed(2);
+
+// bill
+var bill =
+"Customer Name: " + customerName +
+"\nCurrent Month: " + currentMonth +
+"\nNumber of Units: " + units +
+"\nCharges per Unit: " + chargesPerUnit +
+"\nNet Amount Payable (within Due Date): " + netAmount +
+"\nLate Payment Surcharge: " + lateSurcharge +
+"\nGross Amount Payable (after Due Date): " + grossAmount;
+
+console.log(bill);
+alert(bill);
