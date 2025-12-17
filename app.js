@@ -115,3 +115,29 @@ var diffSeconds = Math.floor(diffMs / 1000);
 
 alert("Seconds passed since beginning of 2015: " + diffSeconds);
 console.log("Seconds passed since beginning of 2015: " + diffSeconds);
+
+// Answer11
+
+var now = new Date();
+
+console.log("Current date & time: " + now);
+alert("Current date & time: " + now);
+
+var oneHourAgo = new Date(now);
+
+oneHourAgo.setHours(oneHourAgo.getHours() - 1);
+
+console.log("1 hour ago time is: " + oneHourAgo);
+alert("1 hour ago time is: " + oneHourAgo);
+
+// Answer12
+
+var now = new Date();
+
+console.log("Current date:", now);
+alert("Current date: " + now);
+
+now.setFullYear(now.getFullYear() - 100);
+
+console.log("Date 100 years back:", now);
+alert("Date 100 years back: " + now);
