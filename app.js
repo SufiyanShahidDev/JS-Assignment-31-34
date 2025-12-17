@@ -69,3 +69,23 @@ var minutesSince1970 = d.getTime() / (1000 * 60);
 
 alert("Minutes since Jan 1, 1970: " + minutesSince1970);
 console.log("Minutes since Jan 1, 1970: " + minutesSince1970);
+
+// Answer7
+
+var now = new Date();
+var hours = now.getHours();
+
+if (hours < 12) {
+  alert("It's AM");
+  console.log("It's AM");
+} else {
+  alert("It's PM");
+  console.log("It's PM");
+}
+
+// Answer8
+
+var laterDate = new Date(2020, 11, 31);  
+
+console.log(laterDate);
+alert(laterDate);
