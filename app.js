@@ -47,3 +47,25 @@ if (dayIndex === 0 || dayIndex === 6) {
     alert("It's a normal day");
     console.log("It's a normal day");
 }
+
+// Answer5
+
+var now = new Date();
+var date = now.getDate();
+
+if (date < 16) {
+    alert("First fifteen days of the month");
+    console.log("First fifteen days of the month");
+} else {
+    alert("Last days of the month");
+    console.log("Last days of the month");
+}
+
+// Answer6
+
+var d = new Date();
+
+var minutesSince1970 = d.getTime() / (1000 * 60);
+
+alert("Minutes since Jan 1, 1970: " + minutesSince1970);
+console.log("Minutes since Jan 1, 1970: " + minutesSince1970);
