@@ -89,3 +89,29 @@ var laterDate = new Date(2020, 11, 31);
 
 console.log(laterDate);
 alert(laterDate);
+
+// Answer9
+
+var ramadanStart = new Date(2025, 1, 18); 
+
+var today = new Date();
+
+var diffMs = today.getTime() - ramadanStart.getTime();
+
+var diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+alert(diffDays + " days have passed since 1st Ramadan.");
+console.log(diffDays + " days have passed since 1st Ramadan.");
+
+// Answer10
+
+var now = new Date();
+
+var start2015 = new Date(2015, 0, 1);   // 0 = January
+
+var diffMs = now.getTime() - start2015.getTime();
+
+var diffSeconds = Math.floor(diffMs / 1000);
+
+alert("Seconds passed since beginning of 2015: " + diffSeconds);
+console.log("Seconds passed since beginning of 2015: " + diffSeconds);
